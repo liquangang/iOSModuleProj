@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:QGIOSTimer/QGIOSTimer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSHeader/QGIOSHeader.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSCodeBlock/QGIOSCodeBlock.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSCategory/QGIOSCategory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSAudio/QGIOSAudio.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSThreadManager/QGIOSThreadManager.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSHUD/QGIOSHUD.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSNetWorking/QGIOSNetWorking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QGIOSPlayer/QGIOSPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:IOSProgrammingFramework.xcodeproj">
+   </FileRef>
+</Workspace>

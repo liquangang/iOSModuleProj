@@ -1,0 +1,6 @@
+framework module QGIOSPlayer {
+  umbrella header "QGIOSPlayer.h"
+
+  export *
+  module * { export * }
+}

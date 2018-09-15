@@ -1,0 +1,6 @@
+framework module QGIOSNetWorking {
+  umbrella header "QGIOSNetWorking.h"
+
+  export *
+  module * { export * }
+}

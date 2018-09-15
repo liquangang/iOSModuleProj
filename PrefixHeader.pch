@@ -1,0 +1,100 @@
+//
+//  PrefixHeader.pch
+//  IOSProgrammingFramework
+//
+//  Created by liquangang on 2017/1/7.
+//  Copyright © 2017年 liquangang. All rights reserved.
+//
+
+/*
+ 首先，这个文件的作用：记录自己的想法。
+ 
+ --------------------------------------------------------------------------------------------------------
+ 
+ 一些原则：
+ （1）只要可以使用其他方式实现，就要避免使用单例。
+ （2）时刻谨记模块化原则
+ （3）希望用对象调用的方法，就写在分类里面，希望直接调用的，就写成c方法
+ 
+ --------------------------------------------------------------------------------------------------------
+ 
+ 参考文章：
+ （1）http://www.jianshu.com/p/89e25c288d76
+ 
+ --------------------------------------------------------------------------------------------------------
+ 
+ 需要添加或者更改的模块：
+ （1）轮播图模块（实现方式：自己编写代码实现）
+ （2）afnet模块重新封装get、post
+  (3)pch文件也做成cocoapods的形式
+ 
+ --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 实现方式：
+ （1）给控件添加功能采用继承的方式来添加
+ （2）所有的模块采用cocoapods来统一管理，即控件也采用cocoapods集成的方式
+ 
+ 
+ --------------------------------------------------------------------------------------------------------
+ 
+ 
+ --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 最近要做的事情：
+ * 相册整合进来（使用开源库方式）
+ * 权限的集成（写成app的分类）
+ * 完成播放器并开源
+ * 将播放器使用pod集成到该项目里
+ * 网易首页
+ * app与h5交互
+ * 图片文件的存储方式：
+    * 一类文件使用一个asset来管理
+    * 不同的无关联的图片创建不同的asset来管理
+    * 不使用文件夹来存放图片资源
+ 
+ 
+ --------------------------------------------------------------------------------------------------------
+ 
+ 
+ --------------------------------------------------------------------------------------------------------
+ 常用本地路径：
+ * 打adhoc包用的描述文件路径：/Users/biyao/Library/MobileDevice/Provisioning Profiles
+ * 本地Apache服务器的地址：/Library/WebServer/Documents
+ * 本地ApacheURL：http://localhost/
+ * Xcode-DerivedData：/Users/liquangang/Library/Developer/Xcode/DerivedData
+ --------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ */
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+
+#pragma mark - 各种外部导入的头文件，不需要再项目中重新编写，注意防止相互引用导致的错误
+
+#import <QGIOSHeader/QGIOSHeader.h>
+#import <QGIOSCategory/QGIOSCategory.h>
+#import <QGIOSThreadManager/QGIOSThreadManager.h>
+#import <QGIOSAudio/QGIOSAudio.h>
+#import <QGIOSHUD/QGIOSHUD.h>
+#import <QGIOSTimer/QGIOSTimer.h>
+#import <QGIOSNetWorking/QGIOSNetWorking.h>
+#import <QGIOSPlayer/QGIOSPlayer.h>
+
+#pragma mark - thirdParty
+#import "FMDB.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#import <YYModel/YYModel.h>
+#import <JPFPSStatus/JPFPSStatus.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CommonCrypto/CommonCrypto.h>
+
+#endif
